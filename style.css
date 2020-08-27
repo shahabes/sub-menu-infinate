@@ -1,0 +1,33 @@
+nav .menu > .item{
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+nav .menu > .item:hover > .sub-menu{
+    display: block;
+}
+
+nav .menu .sub-menu{
+    color: black;
+    background: #ddd;
+    position: absolute;
+    display: none;
+    padding: 0;
+    width: 100px;
+}
+
+
+nav .menu .sub-menu > .item:hover > .sub-menu{
+    display: block;
+}
+
+nav .menu .sub-menu .sub-menu{
+    left: 100%;
+    transform: translateY(-20px);
+    display: none;
+}
+ul, li{
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
